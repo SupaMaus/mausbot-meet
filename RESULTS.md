@@ -49,3 +49,8 @@ First run: 2026-11-17, Boat VM created 14:53Z.
   - It then failed its 10 s join check.
   - Replaying the same steps showed what Meet did. The pre-join page said "This call is open to anyone" and "System info will be sent to confirm you're not a bot". After "Join now", Meet switched to "You can't join this video call", which stayed for 25 s and more.
   - So Google's anti-bot check refuses the anonymous guest. The meeting's access settings are not the cause.
+- **Meet, run 4:** a second meeting, with the host in it and settings that require asking to join. Same setup as run 3.
+  - The pre-join page offered "Ask to join"; joinly filled the name and clicked it.
+  - Meet answered "You can't join this video call" within 3 s and kept it.
+  - Anonymous guests from this VM are refused whether the meeting is open or knock-to-join.
+  - Next: the same join from a browser profile signed in to a dedicated Google account.
