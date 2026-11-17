@@ -12,10 +12,10 @@ First run: 2026-11-17, Boat VM created 14:53Z.
 | Outbound HTTPS (ghcr, Meet, Zoom, Teams, Hugging Face) | all reachable, 0.06–0.19 s |
 | Outbound UDP (STUN 19302) | ok, Google STUN answered |
 | Image pull time / size | 41 s; digest verified |
-| Session start: PulseAudio, Xvfb, Chromium processes | not run |
-| Virtual speaker and mic present | not run |
-| Kokoro speaks → Whisper reads it back | not run |
-| CPU / RAM idle, session open | not run |
+| Session start: PulseAudio, Xvfb, Chromium processes | yes: all three up about 1 s after a client connects (models loaded in the same second) |
+| Virtual speaker and mic present | yes: the virtual mic is fed ("mic pacing" log lines); the speaker sink is in place |
+| Kokoro speaks → Whisper reads it back | yes: 2.6 s of audio in 1.3 s; Whisper base read it back word for word in 1.5 s |
+| CPU / RAM idle, session open | idle container 0.3% CPU, 54–400 MB; VM 1.6 GB of 7.9 GB used |
 
 ## Per platform
 
