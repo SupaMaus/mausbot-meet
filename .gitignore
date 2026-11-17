@@ -1,0 +1,20 @@
+# Secrets: never commit keys
+.env
+.env.*
+*.key
+secrets*
+*.pem
+
+# Meeting data from real calls stays on the VM
+recordings/
+transcripts/
+runs/
+*.wav
+*.mp3
+*.ogg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
